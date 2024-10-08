@@ -6,9 +6,9 @@ from textblob import TextBlob
 
 # Initialize Reddit API using Streamlit's secrets management
 reddit = praw.Reddit(
-    client_id=st.secrets["REDDIT_CLIENT_ID"],
-    client_secret=st.secrets["REDDIT_CLIENT_SECRET"],
-    user_agent=st.secrets["REDDIT_USER_AGENT"]
+    client_id = st.secrets["REDDIT"]["CLIENT_ID"],
+    client_secret = st.secrets["REDDIT"]["CLIENT_SECRET"],
+    user_agent = st.secrets["REDDIT"]["USER_AGENT"],
 )
 
 # Streamlit App
